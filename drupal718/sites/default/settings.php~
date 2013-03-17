@@ -113,16 +113,17 @@
  *
  * For a single database configuration, the following is sufficient:
  * @code
- * $databases['default']['default'] = array(
- *   'driver' => 'mysql',
- *   'database' => 'databasename',
- *   'username' => 'username',
- *   'password' => 'password',
- *   'host' => 'localhost',
- *   'prefix' => 'main_',
- *   'collation' => 'utf8_general_ci',
- * );
- * @endcode
+*/ 
+$databases['default']['default'] = array(
+    'driver' => 'mysql',
+    'database' => 'hsmp',
+    'username' => 'root',
+    'password' => 'root',
+    'host' => 'localhost',
+    'prefix' => '',
+    'collation' => 'utf8_general_ci',
+  );
+ /* @endcode
  *
  * You can optionally set prefixes for some or all database table names
  * by using the 'prefix' setting. If a prefix is specified, the table
@@ -215,9 +216,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'hsm-drupal',
+      'database' => 'hsmp',
       'username' => 'root',
-      'password' => 'root',
+      'password' => '',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
@@ -256,7 +257,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = 'puijxh-hsAgt9EPHLrAFTY8f4cBC5ZDx0VHDD9w4TZc';
+$drupal_hash_salt = 'oOw53pAQj2ZPPDy2Z4rUtvA6epIGHyeB2XFeATO1mL4';
 
 /**
  * Base URL (optional).
